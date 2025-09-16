@@ -4,6 +4,8 @@ export interface LoaderCircularDotsProps extends IFBaseProps {
     dotSize?: number;
     dots?: number;
     speed?: number;
+    shrink?: number;
+    angleStep?: number;
 }
 export declare const LoaderCircularDots: React.FC<LoaderCircularDotsProps>;
 export default LoaderCircularDots;

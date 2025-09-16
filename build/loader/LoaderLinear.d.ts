@@ -6,4 +6,5 @@ export interface LoaderLinearProps extends IFBaseProps {
     speed?: number;
 }
 export declare const LoaderLinear: React.FC<LoaderLinearProps>;
+export declare const LoaderLinearFullWidth: React.FC<LoaderLinearProps>;
 export default LoaderLinear;

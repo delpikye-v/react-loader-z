@@ -74,72 +74,6 @@ function Example() {
         <h4>LoaderChaseDots</h4>
         <LoaderChaseDots size={60} color="#FF5722" speed={2} />
       </div>
-
-      {/* 3️⃣ LoaderCircularDots */}
-      <div>
-        <h4>LoaderCircularDots</h4>
-        <LoaderCircularDots size={80} dotSize={12} color="#4CAF50" dots={8} speed={1} />
-      </div>
-
-      {/* 4️⃣ LoaderCubeGrid */}
-      <div>
-        <h4>LoaderCubeGrid</h4>
-        <LoaderCubeGrid size={60} color="#673AB7" />
-      </div>
-
-      {/* 5️⃣ LoaderDotsCircle */}
-      <div>
-        <h4>LoaderDotsCircle</h4>
-        <LoaderDotsCircle size={60} dots={6} dotSize={8} color="#E91E63" />
-      </div>
-
-      {/* 6️⃣ LoaderDoubleBounce */}
-      <div>
-        <h4>LoaderDoubleBounce</h4>
-        <LoaderDoubleBounce size={50} color="#009688" />
-      </div>
-
-      {/* 7️⃣ LoaderFoldingCube */}
-      <div>
-        <h4>LoaderFoldingCube</h4>
-        <LoaderFoldingCube size={60} color="#795548" speed={2.4} />
-      </div>
-
-      {/* 8️⃣ LoaderLinear */}
-      <div>
-        <h4>LoaderLinear</h4>
-        <LoaderLinear size={140} thickness={6} color="#FF9800" fullWidth={false} />
-      </div>
-
-      {/* 9️⃣ LoaderLinearDots */}
-      <div>
-        <h4>LoaderLinearDots</h4>
-        <LoaderLinearDots size={14} dots={5} color="#3F51B5" speed={1.4} />
-      </div>
-
-      {/* 🔟 LoaderPulse */}
-      <div>
-        <h4>LoaderPulse</h4>
-        <LoaderPulse size={48} color="#9C27B0" speed={1.2} />
-      </div>
-
-      {/* 11️⃣ LoaderRing */}
-      <div>
-        <h4>LoaderRing</h4>
-        <LoaderRing size={50} color="#4CAF50" speed={1.2} />
-      </div>
-
-      {/* 12️⃣ LoaderSpinner */}
-      <div>
-        <h4>LoaderSpinner</h4>
-        <LoaderSpinner size={40} color="#03A9F4" speed={0.8} />
-      </div>
-
-      {/* 13️⃣ LoaderWave */}
-      <div>
-        <h4>LoaderWave</h4>
-        <LoaderWave size={40} color="#8BC34A" speed={1.2} bars={5} />
-      </div>
     </div>
   );
 }
@@ -147,23 +81,39 @@ function Example() {
 
 ---
 
-## 🧩 Components List
+# ⚡ React Loaders Collection
 
-| Component              | Props Interface             | Description                                        |
-| ---------------------- | --------------------------- | -------------------------------------------------- |
-| **LoaderChaseDots**    | `IFLoaderChaseDotsProps`    | Multiple dots chasing each other in a circle       |
-| **LoaderCircularDots** | `IFLoaderCircularDotsProps` | Dots rotating around a circle                      |
-| **LoaderCubeGrid**     | `IFLoaderCubeGridProps`     | Animated 3×3 cube grid                             |
-| **LoaderDotsCircle**   | `IFLoaderDotsCircleProps`   | Dots moving around a circular path                 |
-| **LoaderDoubleBounce** | `IFLoaderDoubleBounceProps` | Two circles bouncing in opposite phases            |
-| **LoaderFoldingCube**  | `IFLoaderFoldingCubeProps`  | Folding cube spinner                               |
-| **LoaderLinear**       | `IFLoaderLinearProps`       | Horizontal progress/line loader                    |
-| **LoaderLinearDots**   | `IFLoaderLinearDotsProps`   | Dots running left-to-right in a line               |
-| **LoaderRing**         | `IFLoaderRingProps`         | Simple rotating ring                               |
-| **LoaderSpinner**      | `IFLoaderSpinnerProps`      | Classic spinner animation                          |
-| **LoaderBar**          | `IFLoaderBarProps`          | Animated bar loader                                |
-| **LoaderPulse**        | `IFLoaderPulseProps`        | Pulsing circle animation                           |
-| **LoaderWave**         | `IFLoaderWaveProps`         | Wave-style vertical bars                           |
+A collection of **21 customizable loaders** built with `styled-components`.
+All loaders support props like `loading`, `size`, `color`, `speed`, `center`, `backdrop`.
+
+---
+
+## 📦 Available Loaders
+
+| Loader Name           | Preview (concept)            | Description / Style          | Key Props |
+|-----------------------|------------------------------|------------------------------|-----------|
+| **LoaderBar**         | ▓▓▓▓▓                        | Expanding bar                | `size`, `thickness`, `color` |
+| **LoaderChaseDots**   | ●●●●                          | Dots chasing in a circle     | `dots`, `size`, `speed` |
+| **LoaderCircularDots**| ⭕ ●●●                        | Circular rotating dots       | `dots`, `dotSize`, `size`, `speed` |
+| **LoaderCubeGrid**    | ◼︎◼︎◼︎<br>◼︎◼︎◼︎<br>◼︎◼︎◼︎ | 3×3 pulsing cube grid        | `size`, `color`, `speed` |
+| **LoaderDotsCircle**  | ● ● ● ●                      | Dots fading around a circle  | `dots`, `size`, `speed` |
+| **LoaderDoubleBounce**| ◎ ◎                          | 2 bouncing scaling circles   | `size`, `color`, `speed` |
+| **LoaderFlipSquare**  | ◼︎ ↻                          | Flipping square              | `size`, `color`, `speed` |
+| **LoaderFoldingCube** | ◼︎◼︎                         | Folding 2D cube animation    | `size`, `color`, `speed` |
+| **LoaderLinear**      | █████                        | Linear progress bar (loop)   | `size`, `thickness`, `color` |
+| **LoaderLinearDots**  | ●●●                          | Moving dots along a line     | `dots`, `size`, `speed` |
+| **LoaderLinearDual**  | ⇆                            | Dual moving bars             | `size`, `thickness`, `color` |
+| **LoaderLinearFillWipe** | ████                     | Fill → wipe linear effect    | `size`, `thickness`, `speed` |
+| **LoaderMeteor**      | ☄                            | Falling meteor line effect   | `size`, `speed`, `color` |
+| **LoaderPulse**       | ● ↕                          | Single pulsing circle        | `size`, `color`, `speed` |
+| **LoaderPulseMulti**  | ● ● ●                        | Multiple pulsing dots        | `dots`, `size`, `speed` |
+| **LoaderRing**        | ◌                            | Rotating ring (spinner ring) | `size`, `thickness`, `color` |
+| **LoaderRipple**      | ◎ ◎                          | Ripple expanding circles     | `size`, `color`, `speed` |
+| **LoaderSpinner**     | ⟳                            | Classic spinner              | `size`, `thickness`, `speed` |
+| **LoaderTyping**      | ● ● ●                        | Typing indicator             | `dots`, `speed`, `color` |
+| **LoaderWave**        | ≋≋≋                          | Wave bars animation          | `bars`, `height`, `speed` |
+| **LoaderWaveDots**    | ●●●●                         | Wave-style bouncing dots     | `dots`, `speed`, `color` |
+
 ---
 
 ## ⚙️ Props (General Guidelines)
